@@ -34,7 +34,7 @@ export default async function handler(req: NextRequest) {
   const defaultPrompt = `${botName}: ${initialMessages[0].message}\n${userName}: ${messagesPrompt}\n${botName}: `;
 
   const payload = {
-    model: "text-davinci-003",
+    model: "gpt-3.5-turbo-instruct",
     prompt: defaultPrompt,
     temperature: 0.7,
     max_tokens: 200,
